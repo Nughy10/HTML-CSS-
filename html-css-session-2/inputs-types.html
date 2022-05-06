@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Inputs</title>
+</head>
+<body>
+    <h1>Tipos de inputs</h1>
+
+    <form action="/prueba" method="post">
+        <label>
+            <p>Input text</p>
+            <input name="cualquier-texto" type="text" value="valor por defecto">
+        </label>
+
+        <label>
+            <p>Input type color</p>
+            <input name="colorcito" type="color">
+        </label>
+
+        <label>
+            <p>Input type botón</p>
+            <input type="button" value="Texto del botón">
+        </label>
+
+        <label>
+            <p>Input type date</p>
+            <input name="aniversary-date" type="date">
+        </label>
+
+        <label>
+            <p>Input type date and hour</p>
+            <input name="selector-fecha-hora" type="datetime-local">
+        </label>
+
+        <label>
+            <p>Input type email</p>
+            <input name="correo" type="email">
+        </label>
+
+        <label>
+            <p>Input type file</p>
+            <input name="profile-image" accept=".gif,.jpg,.jpeg,.png" type="file">
+        </label>
+
+        <label>
+            <p>Input type hidden</p>
+            <input name="input-oculto" type="hidden" value="Este valor va oculto al usuario">
+        </label>
+
+        <label>
+            <p>Input type image</p>
+            <input name="imagen" type="image" width="50px" src="https://m.media-amazon.com/images/I/31B1ds17heL._AC_.jpg">
+        </label>
+
+        <label>
+            <p>Input type month</p>
+            <input name="mes" type="month">
+        </label>
+
+        <label>
+            <p>Input type number</p>
+            <input name="quantity" type="number">
+        </label>
+
+        <label>
+            <p>Input type password</p>
+            <input name="password" type="password">
+        </label>
+
+        <label>
+            <p>Input type radio</p>
+            <h3>
+                Vino en un barco de nombre español, aunque en realidad era un tipo extranjero
+                Trajo el tabaco rubio que robó y lo probamos nosotros primeros.
+            </h3>
+            <input name="test-radio" type="radio"> <span>Aristóteles</span>
+            <input name="test-radio" type="radio"> <span>Meóclides</span>
+            <input name="test-radio" type="radio"> <span>Colón</span>
+        </label>
+
+        <label>
+            <p>Input type checkbox</p>
+            <input name="checkbox1" type="checkbox"> <span>Chocolate</span>
+        </label>
+        <label>
+            <input name="checkbox2" type="checkbox"> <span>Manzana</span>
+        </label>
+        <label>
+            <input name="checkbox3" type="checkbox"> <span>Pera</span>
+        </label>
+        <label>
+            <input name="checkbox4" type="checkbox"> <span>batido</span>
+        </label>
+
+        <label>
+            <p>Input type range</p>
+            <input name="rango" type="range" min="100" max="2000">
+        </label>
+        
+        <label>
+            <p>Input type reset</p>
+            <button type="reset">BORRAR FORMULARIO</button>
+        </label>
+        
+        <label>
+            <p>Input type search</p>
+            <input name="busqueda" type="search">
+        </label>
+        
+        <label>
+            <p>Input type telephone</p>
+            <input name="phone" type="tel">
+        </label>
+
+        <label>
+            <p>Input type time</p>
+            <input name="hora" type="time">
+        </label>
+
+        <label>
+            <p>Input type url</p>
+            <input name="url" type="url">
+        </label>
+
+        <label>
+            <p>Input type week</p>
+            <input name="week" type="week">
+        </label>
+        
+        <button type="submit">Enviar Formulario</button>
+    </form>
+</body>
+</html>

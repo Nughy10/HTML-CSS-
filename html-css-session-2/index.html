@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formularios en HTML</title>
+    </head>
+
+    <body>
+        <h1>Formularios en HTML</h1>
+
+        <form action="/upgrade-form-test" method="post">
+            <fieldset>
+                <legend>Datos de Usuario</legend>
+
+                <label>
+                    <p>Nombre de Usuario</p>
+                    <input name="username" type="text">
+                </label>
+
+                <label>
+                    <p>Email</p>
+                    <input name="email" type="email">
+                </label>
+
+                <label>
+                    <p>Descripción</p>
+                    <textarea name="description" cols="90" rows="3"></textarea>
+                </label>
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos de Contacto</legend>
+                <label>
+                    <p>Dirección</p>
+                    <input type="text" name="direction">
+                </label>
+
+                <input name="oculto" type="hidden" value="Este valor va oculto al usuario">
+            </fieldset>
+
+            <!-- <input type="submit" value="Enviar Formulario"> -->
+            <button type="submit">Enviar Formulario</button>
+            <button type="reset">Borrar Todo</button>
+        </form>
+    </body>
+</html>
