@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+p {
+    color: #FABADA;
+    text-decoration: underline;
+    font-size: 24px;
+}
+
+.parragraph, .container, #third {
+    color: aliceblue;
+    border: 2px dotted black;
+    color: darkturquoise;
+}
+
+#first {
+   cursor: progress; 
+}
+
+div p {
+  /* transform: rotate(120deg);   */
+}
+
+a.link {
+    color: blueviolet;
+}
+
+.colors-container {
+    background-color: black;
+}
+
+.colors-container div {
+    height: 100px;
+    width: 100px;
+}
+
+.first-div {
+    background-color: #345734;
+}
+
+.second-div {
+    background-color: tomato;
+}
+
+.third-div {
+    background-color: rgb(145, 35, 240);
+}
+
+.four-div {
+    background-color: rgba(145, 35, 240, 0.5);
+}
+
+.tipography {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.tipography .one {
+    font-weight: 600;
+}
+.tipography .two {
+    font-size: 60px;
+    font-family: 'Koulen', cursive;
+}
+.tipography .three {
+    font-style: italic;
+    font-weight: bold;
+}
