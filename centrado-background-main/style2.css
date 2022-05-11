@@ -1,0 +1,12 @@
+div {
+    width: 300px;  /*vw  -- wiew width> */
+    height: 300px; /* vh --> wiew height */
+    /* background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Dragonball_%284-Star%29.svg/240px-Dragonball_%284-Star%29.svg.png") #00D repeat center; */
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Dragonball_%284-Star%29.svg/240px-Dragonball_%284-Star%29.svg.png");
+    background-color: green;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
