@@ -1,0 +1,90 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  /* 4 columnas que ocupan una fracción */
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  /* 4 filas y la fracción que ocupara cada una de ellas */
+  -ms-grid-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+      grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+  /* Area de trabajo y posicionamiento en neustro grid */
+      grid-template-areas: "nav nav nav nav" "main main main main" "about about about sidebar" "contact contact contact sidebar" "footer footer footer footer";
+  /* Espacio entre elementos */
+  gap: 0.5rem;
+  text-align: center;
+}
+
+nav {
+  background-color: orange;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: nav;
+}
+
+nav ul {
+  list-style: none;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main {
+  background-color: olivedrab;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: main;
+}
+
+.sidebar {
+  background: skyblue;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: sidebar;
+}
+
+.about {
+  background: orchid;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: about;
+}
+
+.contact {
+  background: lightcoral;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: contact;
+}
+
+footer {
+  background-color: blueviolet;
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: footer;
+}
+
+@media only screen and (max-width: 550px) {
+  .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+        grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+        grid-template-areas: "nav" "main" "about" "sidebar" "contact" "footer";
+  }
+}
+/*# sourceMappingURL=grid.css.map */

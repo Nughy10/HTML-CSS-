@@ -1,0 +1,151 @@
+@import "./reset.scss"; // Esto hará que cuando se genere el index.css tenga el contenido de reset.scss y de este mismo archivo.
+
+$primary: red; // variable en sass
+$secondary: #fabada; // variable en sass
+
+// Variables nativas en CSS, las llamamos CSS Custom Properties.
+// :root {
+//     --font-color: yellow;
+// }
+
+html,
+body {
+  background-color: $primary; // variable en sass
+  color: $secondary; // variable en sass
+  // color: var(--font-color); // variable en sass
+  font-size: 12px;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+.nav {
+  color: black;
+
+  p {
+    // .nav p {}
+    border: 3px solid lightgreen;
+  }
+
+  p.fin-nav {
+    border: none;
+    cursor: pointer;
+  }
+
+  .fin-nav {
+    // .nav .fin-nav {} todos los elementos con clase .fin-nav dentro de .nav
+    color: purple;
+  }
+
+  &__logo {
+    // .nav__logo
+    color: yellow;
+
+    &:hover {
+      // .nav__logo:hover
+      font-size: 50px;
+    }
+  }
+
+  &__links {
+    // .nav__link
+    display: flex;
+  }
+
+  &__link {
+    // .nav__link
+    margin-right: 12px;
+
+    &--active {
+      // .nav__link--active
+      color: blue;
+      text-decoration: underline;
+    }
+
+    &--disabled {
+      cursor: progress;
+    }
+  }
+}
+
+main {
+    .fin-nav {
+        // .nav .fin-nav {} todos los elementos con clase .fin-nav dentro de .nav
+        color: fuchsia;
+      }
+}
+
+.footer {
+    display: flex;
+    gap: 20px;
+
+    &__column {
+        flex: 1;
+        height: 50px;
+        background-color: blue;
+
+        border: {
+            right: 2px solid green;
+            bottom: 2px solid red;
+            radius: 5%;
+        }
+    }
+}
+
+@keyframes animacion-molona {
+  0% { top: 0; left: 0; }
+  30% { top: 50px; }
+  68%, 72% { left: 50px; }
+  100% { top: 100px; left: 100%; }
+}
+
+button {
+  font-size: 50px;
+  padding: 30px;
+
+  &:hover {
+    background-color: red;
+    transform: scale(1.2);
+    transition: {
+      delay: 0;
+      timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+      duration: 4s;
+      property: all;
+    }
+  }
+}
+
+.animation {
+  width: 400px;
+  height: 400px;
+  background-color: black;
+
+  &__animated {
+    position: relative;
+    background-color: yellow;
+    width: 40px;
+    height: 40px;
+
+    animation: animacion-molona 5s ease-in 0s 4 alternate-reverse both;
+  }
+}
+
+@media screen and (max-width: 480px) {
+    /* Código CSS que solo aplica a pantallas con ancho < 480 */
+    @import './mobile.scss';
+    .nav {
+        &__links {
+            flex-direction: column;
+        }
+    }
+    
+    .footer {
+        flex-direction: column;
+
+        &__column {
+            flex: none;
+        }
+    }
+ }

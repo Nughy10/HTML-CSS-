@@ -1,0 +1,224 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html,
+body {
+  background-color: red;
+  color: #fabada;
+  font-size: 12px;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+.nav {
+  color: black;
+}
+
+.nav p {
+  border: 3px solid lightgreen;
+}
+
+.nav p.fin-nav {
+  border: none;
+  cursor: pointer;
+}
+
+.nav .fin-nav {
+  color: purple;
+}
+
+.nav__logo {
+  color: yellow;
+}
+
+.nav__logo:hover {
+  font-size: 50px;
+}
+
+.nav__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav__link {
+  margin-right: 12px;
+}
+
+.nav__link--active {
+  color: blue;
+  text-decoration: underline;
+}
+
+.nav__link--disabled {
+  cursor: progress;
+}
+
+main .fin-nav {
+  color: fuchsia;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.footer__column {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 50px;
+  background-color: blue;
+  border-right: 2px solid green;
+  border-bottom: 2px solid red;
+  border-radius: 5%;
+}
+
+@-webkit-keyframes animacion-molona {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  30% {
+    top: 50px;
+  }
+  68%, 72% {
+    left: 50px;
+  }
+  100% {
+    top: 100px;
+    left: 100%;
+  }
+}
+
+@keyframes animacion-molona {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  30% {
+    top: 50px;
+  }
+  68%, 72% {
+    left: 50px;
+  }
+  100% {
+    top: 100px;
+    left: 100%;
+  }
+}
+
+button {
+  font-size: 50px;
+  padding: 30px;
+}
+
+button:hover {
+  background-color: red;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition-delay: 0;
+          transition-delay: 0;
+  -webkit-transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+          transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-transition-duration: 4s;
+          transition-duration: 4s;
+  -webkit-transition-property: all;
+  transition-property: all;
+}
+
+.animation {
+  width: 400px;
+  height: 400px;
+  background-color: black;
+}
+
+.animation__animated {
+  position: relative;
+  background-color: yellow;
+  width: 40px;
+  height: 40px;
+  animation: animacion-molona 5s ease-in 0s 4 alternate-reverse both;
+}
+
+@media screen and (max-width: 480px) {
+  /* Código CSS que solo aplica a pantallas con ancho < 480 */
+  .nav {
+    color: black;
+  }
+  .nav__links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__column {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+  }
+}
+/*# sourceMappingURL=index.css.map */
