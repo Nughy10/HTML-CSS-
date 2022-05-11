@@ -1,0 +1,77 @@
+html, body, .content {
+    height: 100%;
+}
+
+.content {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+header, main, footer {
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    border: 2px solid green;
+    background-color: #FABADA;  
+}
+
+.jose-antonio__silla-ikea--grande {}
+.jose-antonio__silla--pequeña {}
+.jose-antonio__mesa--alta {}
+.jose-antonio__mesa--baja {}
+
+.header__logo {
+    flex: 1;
+}
+
+.header__logo--small {
+    font-size: 12px;
+}
+.header__logo--big {
+    font-size: 38px;
+}
+
+.header__logo--dark {
+    color: rgb(38, 38, 38);
+}
+
+.header__logo--light {
+    color: #fefefe;
+}
+
+.header__content {
+    flex: 2;
+}
+
+main {
+    display: flex;
+    border: 2px solid red;
+    background-color: lightgreen;
+    flex: 1;
+}
+
+.main__sidebar {
+    flex: 1;
+}
+
+.main__content {
+    flex: 2;
+}
+
+footer {
+    display: flex;
+    border: 2px solid midnightblue;
+    background-color: lightsalmon;  
+}
+
+.footer__sidebar {
+    flex: 1;
+}
+
+.footer__content {
+    flex: 2;
+}
